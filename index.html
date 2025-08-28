@@ -4,8 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Daisy UI cdn -->
 </head>
-<body>
-    <h1>Assignment 5</h1>
+<body class="">
+    <div class="website_main_container w-11/12 mx-auto">
+        <!-- Header section -->
+        <section class="header_section bg-white">
+            <header class="bg-white flex justify-between items-center py-5">
+                <div class="header_logo flex items-center gap-3">
+                    <img class="w-[50px]" src="./assets/logo.png" alt="">
+                    <h2 class="text-[#006747] text-2xl/6 font-bold">Emergency <br> Service</h2>
+                </div>
+                <!-- header right Items -->
+                <nav class="flex justify-between gap-10">
+                        <div class="flex items-center gap-1">
+                            <p class="heart_count">0</p>
+                            <img class="w-[20px]" src="./assets/heart.png" alt="">
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <p class="coin_count">100</p>
+                            <img class="w-[20px]" src="./assets/coin.png" alt="">
+                        </div>
+                        <button class="rounded-3xl text-white bg-[#00a63e] px-6 py-2">2 Copy</button>
+                    <!-- <div  class="flex gap-3"> -->
+                    </div>
+                </nav>
+            </header>
+        </section>
+
+        <!-- Banner section -->
+         <section class="banner_section bg-[url(./assets/herobg.jpg)] bg-cover bg-no-repeat text-white text-center py-3 ">
+            <img class="w-[50px] mx-auto" src="./assets/logo-dark.png" alt="">
+            <h1 class="font-bold text-2xl">Emergency Service Directory</h1>
+            <p class="text-md font-medium">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+         </section>
+
+        <!-- Main Content Section Card Section -->
+        <section class="cards_section py-10 px-14 grid grid-cols-12 gap-5 bg-yellow-100">
+            <div class="card_container col-span-9 grid grid-cols-3 gap-4">
+                
+                <div class="services_cards rounded-xl bg-white w-75 shadow-md p-4 ">
+                    <figure class="flex justify-between items-center">
+                        <div class="rounded-2xl p-3 bg-[#ffe3e2]">
+                            <img class="w-[20px]" src="./assets/emergency.png" alt="Shoes" />
+                        </div>
+                        <img src="./assets/heart.svg" alt="">
+                    </figure>
+                    <div>
+                        <h2 class="text- font-bold mt-3">National Emergency Number<h2>
+                        <p class="text-[#5C5C5C] text-sm mb-3">National Emergency</p>
+                        <h2 class="text-2xl font-bold mb-2">999<h2>
+                        <span class="rounded-3xl bg-[#f2f2f2] text-[#5C5C5C] px-3 py-1">All</span>  
+                    </div>
+                    <div class="flex justify-between mt-3">
+                        <button class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-8 py-1 flex gap-2"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
+
+                        <button class="bg-[#00a63e] text-white rounded-lg px-8 py-1 flex gap-2"><img class="w-5" src="./assets/call-icon.svg" alt=""> Copy</button>
+                    </div>
+                </div>
+
+                <div class="services_cards rounded-xl bg-white w-75 shadow-md p-4">
+                    <figure class="flex justify-between items-center">
+                        <div class="rounded-2xl p-3 bg-[#ffe3e2]">
+                            <img class="w-[20px]" src="./assets/emergency.png" alt="Shoes" />
+                        </div>
+                        <img src="./assets/heart.svg" alt="">
+                    </figure>
+                    <div>
+                        <h2 class="text- font-bold mt-4">Police Helpline Number<h2>
+                        <p class="text-[#5C5C5C] text-sm mb-4">Police</p>
+                        <h2 class="text-2xl font-bold mb-2">999<h2>
+                        <span class="rounded-3xl bg-[#f2f2f2] text-[#5C5C5C] px-3 py-1">All</span>  
+                    </div>
+                </div>
+                
+                <div class="services_cards rounded-xl bg-white w-75 shadow-md p-4">
+                    <figure class="flex justify-between items-center">
+                        <div class="rounded-2xl p-3 bg-[#ffe3e2]">
+                            <img class="w-[20px]" src="./assets/emergency.png" alt="Shoes" />
+                        </div>
+                        <img src="./assets/heart.svg" alt="">
+                    </figure>
+                    <div>
+                        <h2 class="text- font-bold mt-4">Fire Service Number<h2>
+                        <p class="text-[#5C5C5C] text-sm mb-4">Fire</p>
+                        <h2 class="text-2xl font-bold mb-2">999<h2>
+                        <span class="rounded-3xl bg-[#f2f2f2] text-[#5C5C5C] px-3 py-1">All</span>  
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Call History -->
+            <div class="call_history flex justify-between items-start bg-white col-span-3 shadow-md p-4">
+                <div class="flex justify-between items-center">
+                    <h3><i class="fa-regular fa-clock"></i>  Call History</h3>
+                    <button class="rounded-3xl text-white bg-[#00a63e] px-5 py-2">Clear</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- Cards -->
+                <!-- <div class="card bg-base-100 w-80 shadow-sm">
+                    <figure>
+                        <img class="w-[50px]" src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">National Emergency Number<h2>
+                        <p>National Emergency</p>
+                        <h2 class="card-title">999<h2>
+                        <div class="card-actions justify-center">
+                            <button class="badge bg-[#00a63e] badge-outline ">Copy</button>
+                            <div class="badge badge-outline">Fashion</div>
+                            <div class="badge badge-outline">Products</div>
+                        </div>
+                    </div>
+                </div> -->
+    
+
 </body>
 </html>
