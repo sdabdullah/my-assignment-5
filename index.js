@@ -173,7 +173,16 @@ document.getElementById('history-clear-button').addEventListener('click', functi
 })
 
 
-// Text Copy to Clipboard getCopyToClipboard('text-copy-button')
+// Text Copy to Clipboard
+
+let copyCount = 0;
+
+function getCopyCount(id){
+    const copyCountedValue = document.getElementById(id)
+    copyCount++
+    copyCountedValue.innerText = copyCount;
+}
+
 
 function getCopyToClipboard(id){
     const cardTextCopy = document.getElementById(id).innerText;
@@ -188,38 +197,45 @@ function getCopyToClipboard(id){
 }
 
 document.getElementById('emergency-number-copy-button').addEventListener('click', function() {
-
+    getCopyCount('copy-button-counted-value')
     getCopyToClipboard('copy-emergency-number')
+    
     
 });
 
 document.getElementById('police-number-copy-button').addEventListener('click', function() {
 
     getCopyToClipboard('copy-police-number')
+    getCopyCount('copy-button-counted-value')
+
     
 });
 
 document.getElementById('fire-service-number-copy-button').addEventListener('click', function() {
 
     getCopyToClipboard('copy-fire-service-number')
+    getCopyCount('copy-button-counted-value')
     
 });
 
 document.getElementById('ambulance-number-copy-button').addEventListener('click', function() {
 
     getCopyToClipboard('copy-ambulance-number')
+    getCopyCount('copy-button-counted-value')
     
 });
 
 document.getElementById('women-child-Help-number-copy-button').addEventListener('click', function() {
 
     getCopyToClipboard('copy-women-child-Help-number')
+    getCopyCount('copy-button-counted-value')
     
 });
 
 document.getElementById('railway-helpline-number-copy-button').addEventListener('click', function() {
 
     getCopyToClipboard('copy-railway-helpline-number')
+    getCopyCount('copy-button-counted-value')
     
 });
 
