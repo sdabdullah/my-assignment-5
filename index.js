@@ -26,6 +26,30 @@ const coinDefaultdValue = document.getElementById('coin-counted-value')
  }
 
 
+// Call History Function
+const callHistoryData = []
+
+function getCallHistory(id){
+const historyContainer = document.getElementById(id)
+    historyContainer.innerText = ''
+
+    for(const data of callHistoryData){
+        const div = document.createElement('div')
+        div.innerHTML= `
+        <div class="flex items-center rounded-xl bg-[#fafafa]">
+            <div class="p-3">
+                <h2 class="font-semibold">${data.servicesName}</h2>
+                <p class="text-[#5c5c5c]">${data.hotline}</p>
+            </div>
+            <div class="ml-3">
+                <p class="text-sm font-semibold">${data.time}</p>
+            </div>
+        </div>`
+
+        historyContainer.appendChild(div)
+    }
+}
+
 
 document.getElementById('emergency-call-button').addEventListener('click', function(){
 
@@ -142,32 +166,61 @@ document.getElementById('railway-Help-call-button').addEventListener('click', fu
     getCallHistory('history-container')
 })
 
-// Call History Function
-const callHistoryData = []
-
-function getCallHistory(id){
-const historyContainer = document.getElementById(id)
-    historyContainer.innerText = ''
-
-    for(const data of callHistoryData){
-        const div = document.createElement('div')
-        div.innerHTML= `
-        <div class="flex items-center rounded-xl bg-[#fafafa]">
-            <div class="p-3">
-                <h2 class="font-semibold">${data.servicesName}</h2>
-                <p class="text-[#5c5c5c]">${data.hotline}</p>
-            </div>
-            <div class="ml-3">
-                <p class="text-sm font-semibold">${data.time}</p>
-            </div>
-        </div>`
-
-        historyContainer.appendChild(div)
-    }
-}
-
 // Call History Clear
 document.getElementById('history-clear-button').addEventListener('click', function(){
     document.getElementById('history-container').innerText = ''
     callHistoryData.length = 0
 })
+
+
+// Text Copy to Clipboard getCopyToClipboard('text-copy-button')
+
+function getCopyToClipboard(id){
+    const cardTextCopy = document.getElementById(id).innerText;
+
+    navigator.clipboard.writeText(cardTextCopy)
+    .then(() => {
+        alert('Number Copied to clipboard: ' + cardTextCopy);
+    })
+    .catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
+
+document.getElementById('emergency-number-copy-button').addEventListener('click', function() {
+
+    getCopyToClipboard('copy-emergency-number')
+    
+});
+
+document.getElementById('police-number-copy-button').addEventListener('click', function() {
+
+    getCopyToClipboard('copy-police-number')
+    
+});
+
+document.getElementById('fire-service-number-copy-button').addEventListener('click', function() {
+
+    getCopyToClipboard('copy-fire-service-number')
+    
+});
+
+document.getElementById('ambulance-number-copy-button').addEventListener('click', function() {
+
+    getCopyToClipboard('copy-ambulance-number')
+    
+});
+
+document.getElementById('women-child-Help-number-copy-button').addEventListener('click', function() {
+
+    getCopyToClipboard('copy-women-child-Help-number')
+    
+});
+
+document.getElementById('railway-helpline-number-copy-button').addEventListener('click', function() {
+
+    getCopyToClipboard('copy-railway-helpline-number')
+    
+});
+
+

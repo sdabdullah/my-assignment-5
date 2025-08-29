@@ -43,7 +43,7 @@
             <p class="text-md font-medium mt-3">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
          </section>
 
-        <!-- Main Content Section Card Section -->
+        <!-- Main Content Card Section -->
         <section class="cards_section bg-[#f5fff6] py-10 px-14 grid grid-cols-12 gap-5">
             <div class="card_container col-span-9 grid grid-cols-3 gap-4">
                 
@@ -57,13 +57,12 @@
                     <div>
                         <h2 class="text- font-bold mt-3">National Emergency Number<h2>
                         <p class="text-[#5C5C5C] text-sm mb-2">National Emergency</p>
-                        <h2 class="text-1xl font-bold mb-2">999<h2>
+                        <h2 id="copy-emergency-number" class="text-1xl font-bold mb-2">999<h2>
                         <span class="rounded-3xl bg-[#f2f2f2] text-[#5C5C5C] px-3 py-1">All</span>  
                     </div>
                     <div class="flex justify-between mt-3">
-                        <button class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
-
-                        <button id="emergency-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
+                        <button id="emergency-number-copy-button" class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2 cursor-pointer"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
+                        <button id="emergency-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2 cursor-pointer"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
                     </div>
                 </div>
 
@@ -77,13 +76,12 @@
                     <div>
                         <h2 class="text- font-bold mt-4">Police Helpline Number<h2>
                         <p class="text-[#5C5C5C] text-sm mb-2">Police</p>
-                        <h2 class="text-1xl font-bold mb-2">999<h2>
+                        <h2 id="copy-police-number" class="text-1xl font-bold mb-2">999<h2>
                         <span class="rounded-3xl bg-[#f2f2f2] text-[#5C5C5C] px-3 py-1">Police</span>  
                     </div>
                     <div class="flex justify-between mt-3">
-                        <button class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
-
-                        <button id="police-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
+                        <button id="police-number-copy-button" class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2 cursor-pointer"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
+                        <button id="police-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2 cursor-pointer"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
                     </div>
                 </div>
                 
@@ -97,13 +95,12 @@
                     <div>
                         <h2 class="text- font-bold mt-4">Fire Service Number<h2>
                         <p class="text-[#5C5C5C] text-sm mb-2">Fire Service</p>
-                        <h2 class="text-1xl font-bold mb-2">999<h2>
+                        <h2 id="copy-fire-service-number" class="text-1xl font-bold mb-2">999<h2>
                         <span class="rounded-3xl bg-[#f2f2f2] text-[#5C5C5C] px-3 py-1">Fire</span>  
                     </div>
                     <div class="flex justify-between mt-3">
-                        <button class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
-
-                        <button id="fire-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
+                        <button id="fire-service-number-copy-button" class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2 cursor-pointer"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
+                        <button id="fire-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2 cursor-pointer"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
                     </div>
                 </div>
 
@@ -115,15 +112,14 @@
                         <img onclick="increment()" class="cursor-pointer" src="./assets/heart.svg" alt="">
                     </figure>
                     <div>
-                        <h2 class="text- font-bold mt-4">Ambulance Servicer<h2>
+                        <h2 class="text- font-bold mt-4">Ambulance Service<h2>
                         <p class="text-[#5C5C5C] text-sm mb-2">Ambulance</p>
-                        <h2 class="text-1xl font-bold mb-2">1994-999999<h2>
+                        <h2 id="copy-ambulance-number" class="text-1xl font-bold mb-2">1994-999999<h2>
                         <span class="rounded-3xl bg-[#f2f2f2] text-[#5C5C5C] px-3 py-1">Health</span>  
                     </div>
                     <div class="flex justify-between mt-3">
-                        <button class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
-
-                        <button id="ambulance-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
+                        <button id="ambulance-number-copy-button" class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2 cursor-pointer"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
+                        <button id="ambulance-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2 cursor-pointer"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
                     </div>
                 </div>
 
@@ -137,13 +133,12 @@
                     <div>
                         <h2 class="text- font-bold mt-4">Women & Child Helpline<h2>
                         <p class="text-[#5C5C5C] text-sm mb-2">Women & Child Helpline</p>
-                        <h2 class="text-1xl font-bold mb-2">109<h2>
+                        <h2 id="copy-women-child-Help-number" class="text-1xl font-bold mb-2">109<h2>
                         <span class="rounded-3xl bg-[#f2f2f2] text-[#5C5C5C] px-3 py-1">Help</span>  
                     </div>
                     <div class="flex justify-between mt-3">
-                        <button class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
-
-                        <button id="women-child-Help-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
+                        <button id="women-child-Help-number-copy-button" class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2 cursor-pointer"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
+                        <button id="women-child-Help-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2 cursor-pointer"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
                     </div>
                 </div>
 
@@ -157,13 +152,12 @@
                     <div>
                         <h2 class="text- font-bold mt-4">Bangladesh Railway Helpline <h2>
                         <p class="text-[#5C5C5C] text-sm mb-2">Bangladesh Railway</p>
-                        <h2 class="text-1xl font-bold mb-2">163<h2>
+                        <h2 id="copy-railway-helpline-number" class="text-1xl font-bold mb-2">163<h2>
                         <span class="rounded-3xl bg-[#f2f2f2] text-[#5C5C5C] px-3 py-1">Travel</span>  
                     </div>
                     <div class="flex justify-between mt-3">
-                        <button class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
-
-                        <button id="railway-Help-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
+                        <button id="railway-helpline-number-copy-button" class="border-1 border-[#d4d6d5] rounded-lg text-[#5C5C5C] px-9 py-1 flex gap-2 cursor-pointer"><img src="./assets/copy-icon.svg" alt=""> Copy</button>
+                        <button id="railway-Help-call-button" class="bg-[#00a63e] text-white rounded-lg px-9 py-1 flex gap-2 cursor-pointer"><img class="w-5" src="./assets/call-icon.svg" alt="">Call</button>
                     </div>
                 </div>
             </div>
@@ -172,7 +166,7 @@
             <div class="call_history bg-white col-span-3 shadow-sm p-4">
                 <div class="flex justify-between items-center">
                     <h3 class="font-semibold"><i style="color:#5c5c5c;" class="fa-regular fa-clock"></i>  Call History</h3>
-                    <button id="history-clear-button" class="rounded-3xl text-white bg-[#00a63e] px-5 py-2">Clear</button>
+                    <button id="history-clear-button" class="rounded-3xl text-white bg-[#00a63e] px-5 py-2 cursor-pointer">Clear</button>
                 </div>
 
                 <div id="history-container" class="mt-3">
