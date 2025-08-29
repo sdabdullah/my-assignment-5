@@ -22,11 +22,11 @@
                 <!-- header right Items -->
                 <nav class="flex justify-between gap-10">
                         <div class="flex items-center gap-1">
-                            <p id="heart-counter" class="heart_count font-bold">0</p>
+                            <p id="heart-counted-value" class="heart_count font-bold">0</p>
                             <img class="w-[20px]" src="./assets/heart.png" alt="">
                         </div>
                         <div class="flex items-center gap-1">
-                            <p class="coin_count font-bold">100</p>
+                            <p id="coin-counted-value" class="coin_count font-bold">100</p>
                             <img class="w-[20px]" src="./assets/coin.png" alt="">
                         </div>
                         <button class="rounded-3xl text-white bg-[#00a63e] px-6 py-2">2 Copy</button>
@@ -52,7 +52,7 @@
                         <div class="rounded-2xl p-3 bg-[#ffe3e2]">
                             <img class="w-[20px]" src="./assets/emergency.png" alt="Shoes" />
                         </div>
-                        <img id="emergency-heart-button" src="./assets/heart.svg" alt="">
+                        <img onclick="increment()" class="cursor-pointer" src="./assets/heart.svg" alt="">
                     </figure>
                     <div>
                         <h2 class="text- font-bold mt-3">National Emergency Number<h2>
@@ -72,7 +72,7 @@
                         <div class="rounded-2xl p-3 bg-[#ffe3e2]">
                             <img class="w-[20px]" src="./assets/emergency.png" alt="Shoes" />
                         </div>
-                        <img src="./assets/heart.svg" alt="">
+                        <img onclick="increment()" class="cursor-pointer" src="./assets/heart.svg" alt="">
                     </figure>
                     <div>
                         <h2 class="text- font-bold mt-4">Police Helpline Number<h2>
@@ -92,7 +92,7 @@
                         <div class="rounded-2xl p-3 bg-[#ffe3e2]">
                             <img class="w-[20px]" src="./assets/fire-service.png" alt="Shoes" />
                         </div>
-                        <img src="./assets/heart.svg" alt="">
+                        <img onclick="increment()" class="cursor-pointer" src="./assets/heart.svg" alt="">
                     </figure>
                     <div>
                         <h2 class="text- font-bold mt-4">Fire Service Number<h2>
@@ -112,7 +112,7 @@
                         <div class="rounded-2xl p-3 bg-[#ffe3e2]">
                             <img class="w-[20px]" src="./assets/ambulance.png" alt="Shoes" />
                         </div>
-                        <img src="./assets/heart.svg" alt="">
+                        <img onclick="increment()" class="cursor-pointer" src="./assets/heart.svg" alt="">
                     </figure>
                     <div>
                         <h2 class="text- font-bold mt-4">Ambulance Servicer<h2>
@@ -132,7 +132,7 @@
                         <div class="rounded-2xl p-3 bg-[#ffe3e2]">
                             <img class="w-[20px]" src="./assets/emergency.png" alt="Shoes" />
                         </div>
-                        <img src="./assets/heart.svg" alt="">
+                        <img onclick="increment()" class="cursor-pointer" src="./assets/heart.svg" alt="">
                     </figure>
                     <div>
                         <h2 class="text- font-bold mt-4">Women & Child Helpline<h2>
@@ -152,7 +152,7 @@
                         <div class="rounded-2xl p-3 bg-[#ffe3e2]">
                             <img class="w-[20px]" src="./assets/Bangladesh-Railway.png" alt="Shoes" />
                         </div>
-                        <img src="./assets/heart.svg" alt="">
+                        <img onclick="increment()" class="cursor-pointer" src="./assets/heart.svg" alt="">
                     </figure>
                     <div>
                         <h2 class="text- font-bold mt-4">Bangladesh Railway Helpline <h2>
@@ -183,17 +183,6 @@
 
     </div>
 
-    <script src="index.js"></script>
-
-
-                    <!-- <div class="flex  items-center rounded-xl bg-[#fafafa]">
-                        <div class="p-3">
-                            <h2 class="font-bold">Fire Service Number</h2>
-                            <p class="text-[#5c5c5c]">999</p>
-                        </div>
-                        <div class="ml-3">
-                            <p>10:40 AM</p>
-                        </div>
-                    </div> -->
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -1,19 +1,34 @@
-// Heart counter
+// Heart counter function
 
-function getHertCount(){
-    let hertCounter = document.getElementById('heart-counter').innerHTML
-    ++hertCounter
-    document.getElementById('heart-counter').innerHTML = hertCounter;
-}
+let count = 0;
+const heartCountedValue = document.getElementById('heart-counted-value')
 
-// document.getElementById('emergency-heart-button').addEventListener('click', function(){
+ function increment(){
+    count++
+    heartCountedValue.innerText = count;
+ }
+
+
+
+// Coin Decrement button
+
+let coin = 100;
+let decValue = 20
+const coinDefaultdValue = document.getElementById('coin-counted-value')
+
+
+ function decrement(){
     
-    
+    if (coin >= decValue) {
+        coin -= decValue;
+        coin = coin + 1
+        coin--
+        coinDefaultdValue.innerText = coin;
+    }
+ }
 
 
 
-    
-// })
 
 
 
@@ -53,9 +68,16 @@ document.getElementById('emergency-call-button').addEventListener('click', funct
         time: new Date().toLocaleTimeString()
     }
     callHistoryData.push(data)
-    alert('📞 Calling National Emergency Service 999...')
 
+    if(coin <= decValue){
+         alert('Not')
+         return;
+    }
+    decrement(coinDefaultdValue)
+
+    alert('📞 Calling National Emergency Service 999...')
     getCallHistory('history-container')
+    
 })
 
 document.getElementById('police-call-button').addEventListener('click', function(){
@@ -67,8 +89,13 @@ document.getElementById('police-call-button').addEventListener('click', function
     }
     callHistoryData.push(data)
 
-    alert('📞 Calling 999...')
+    if(coin <= decValue){
+         alert('Not')
+         return;
+    }
+    decrement(coinDefaultdValue)
 
+    alert('📞 Calling 999...')
     getCallHistory('history-container')
 })
 
@@ -81,8 +108,13 @@ document.getElementById('fire-call-button').addEventListener('click', function()
     }
     callHistoryData.push(data)
 
-    alert('📞 Calling Fire Service 999...')
+    if(coin <= decValue){
+         alert('Not')
+         return;
+    }
+    decrement(coinDefaultdValue)
 
+    alert('📞 Calling Fire Service 999...')
     getCallHistory('history-container')
 })
 
@@ -95,8 +127,13 @@ document.getElementById('ambulance-call-button').addEventListener('click', funct
     }
     callHistoryData.push(data)
 
-    alert('📞 Calling Ambulance 1994-999999...')
+    if(coin <= decValue){
+         alert('Not')
+         return;
+    }
+    decrement(coinDefaultdValue)
 
+    alert('📞 Calling Ambulance 1994-999999...')
     getCallHistory('history-container')
 })
 
@@ -109,8 +146,13 @@ document.getElementById('women-child-Help-call-button').addEventListener('click'
     }
     callHistoryData.push(data)
 
-    alert('📞 Calling Women & Child Helpline 109...')
+    if(coin <= decValue){
+         alert('Not')
+         return;
+    }
+    decrement(coinDefaultdValue)
 
+    alert('📞 Calling Women & Child Helpline 109...')
     getCallHistory('history-container')
 })
 
@@ -123,8 +165,13 @@ document.getElementById('railway-Help-call-button').addEventListener('click', fu
     }
     callHistoryData.push(data)
 
-    alert('📞 Calling Bangladesh Railway 163...')
+    if(coin <= decValue){
+         alert('Not')
+         return;
+    }
+    decrement(coinDefaultdValue)
 
+    alert('📞 Calling Bangladesh Railway 163...')
     getCallHistory('history-container')
 })
 
