@@ -28,13 +28,6 @@ const coinDefaultdValue = document.getElementById('coin-counted-value')
  }
 
 
-
-
-
-
-
-
-
 // Call History Function
 const callHistoryData = []
 
@@ -69,9 +62,9 @@ document.getElementById('emergency-call-button').addEventListener('click', funct
     }
     callHistoryData.push(data)
 
-    if(coin <= decValue){
-         alert('Not')
-         return;
+    if(coin < 20){
+        alert('❌ You do not have enough coins! It takes at least 20 coins to make a call.')
+        return;
     }
     decrement(coinDefaultdValue)
 
@@ -89,9 +82,9 @@ document.getElementById('police-call-button').addEventListener('click', function
     }
     callHistoryData.push(data)
 
-    if(coin <= decValue){
-         alert('Not')
-         return;
+    if(coin < 20){
+        alert('❌ You do not have enough coins! It takes at least 20 coins to make a call.')
+        return;
     }
     decrement(coinDefaultdValue)
 
@@ -108,9 +101,9 @@ document.getElementById('fire-call-button').addEventListener('click', function()
     }
     callHistoryData.push(data)
 
-    if(coin <= decValue){
-         alert('Not')
-         return;
+    if(coin < 20){
+        alert('❌ You do not have enough coins! It takes at least 20 coins to make a call.')
+        return;
     }
     decrement(coinDefaultdValue)
 
@@ -127,9 +120,9 @@ document.getElementById('ambulance-call-button').addEventListener('click', funct
     }
     callHistoryData.push(data)
 
-    if(coin <= decValue){
-         alert('Not')
-         return;
+    if(coin < 20){
+        alert('❌ You do not have enough coins! It takes at least 20 coins to make a call.')
+        return;
     }
     decrement(coinDefaultdValue)
 
@@ -146,9 +139,9 @@ document.getElementById('women-child-Help-call-button').addEventListener('click'
     }
     callHistoryData.push(data)
 
-    if(coin <= decValue){
-         alert('Not')
-         return;
+    if(coin < 20){
+        alert('❌ You do not have enough coins! It takes at least 20 coins to make a call.')
+        return;
     }
     decrement(coinDefaultdValue)
 
@@ -165,9 +158,9 @@ document.getElementById('railway-Help-call-button').addEventListener('click', fu
     }
     callHistoryData.push(data)
 
-    if(coin <= decValue){
-         alert('Not')
-         return;
+    if(coin < 20){
+        alert('❌ You do not have enough coins! It takes at least 20 coins to make a call.')
+        return;
     }
     decrement(coinDefaultdValue)
 
