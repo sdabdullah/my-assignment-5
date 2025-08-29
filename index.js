@@ -8,9 +8,7 @@ const heartCountedValue = document.getElementById('heart-counted-value')
     heartCountedValue.innerText = count;
  }
 
-
-
-// Coin Decrement button
+// Coin Decrement button function
 
 let coin = 100;
 let decValue = 20
@@ -28,30 +26,6 @@ const coinDefaultdValue = document.getElementById('coin-counted-value')
  }
 
 
-// Call History Function
-const callHistoryData = []
-
-function getCallHistory(id){
-const historyContainer = document.getElementById(id)
-    historyContainer.innerText = ''
-
-    for(const data of callHistoryData){
-        const div = document.createElement('div')
-        div.innerHTML= `
-        <div class="flex items-center rounded-xl bg-[#fafafa]">
-            <div class="p-3">
-                <h2 class="font-semibold">${data.servicesName}</h2>
-                <p class="text-[#5c5c5c]">${data.hotline}</p>
-            </div>
-            <div class="ml-3">
-                <p class="text-sm font-semibold">${data.time}</p>
-            </div>
-        </div>`
-
-        historyContainer.appendChild(div)
-
-    }
-}
 
 document.getElementById('emergency-call-button').addEventListener('click', function(){
 
@@ -167,6 +141,30 @@ document.getElementById('railway-Help-call-button').addEventListener('click', fu
     alert('📞 Calling Bangladesh Railway 163...')
     getCallHistory('history-container')
 })
+
+// Call History Function
+const callHistoryData = []
+
+function getCallHistory(id){
+const historyContainer = document.getElementById(id)
+    historyContainer.innerText = ''
+
+    for(const data of callHistoryData){
+        const div = document.createElement('div')
+        div.innerHTML= `
+        <div class="flex items-center rounded-xl bg-[#fafafa]">
+            <div class="p-3">
+                <h2 class="font-semibold">${data.servicesName}</h2>
+                <p class="text-[#5c5c5c]">${data.hotline}</p>
+            </div>
+            <div class="ml-3">
+                <p class="text-sm font-semibold">${data.time}</p>
+            </div>
+        </div>`
+
+        historyContainer.appendChild(div)
+    }
+}
 
 // Call History Clear
 document.getElementById('history-clear-button').addEventListener('click', function(){
